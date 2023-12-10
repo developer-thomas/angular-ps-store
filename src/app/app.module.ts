@@ -10,6 +10,7 @@ import { CardLabelComponent } from './components/card/card-label/card-label.comp
 import { CardPriceComponent } from './components/card/card-price/card-price.component';
 import { FirstMenuComponent } from './components/menu-bar/first-menu/first-menu.component';
 import { SecondMenuComponent } from './components/menu-bar/second-menu/second-menu.component';
+import { ListComponent } from './components/menu-bar/second-menu/list/list.component';
 
 @NgModule({
 	declarations: [
@@ -21,6 +22,7 @@ import { SecondMenuComponent } from './components/menu-bar/second-menu/second-me
 		CardPriceComponent,
 		FirstMenuComponent,
 		SecondMenuComponent,
+  ListComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
