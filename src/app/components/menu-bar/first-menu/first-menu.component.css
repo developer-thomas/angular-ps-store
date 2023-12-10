@@ -1,0 +1,12 @@
+.container-first {
+	background-color: black;
+	display: flex;
+	justify-content: flex-end;
+	height: 36px;
+}
+
+.container-first > img {
+	margin: 0 8px;
+	width: 75px;
+	height: 100%;
+}

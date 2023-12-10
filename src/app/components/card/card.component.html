@@ -1,1 +1,10 @@
-<p>card works!</p>
+<a href="#" class="card-container">
+	<img [src]="cardImg" alt="quadro com uma imagem" class="card-img" />
+	<app-card-label gameLabel="{{ gameLabel }}"></app-card-label>
+
+	<!-- Esse component para ter suas propriedades inputáveis, é preciso declarar as propriedades existente dentro dele pra só assim receber os valores na home component -->
+	<app-card-price
+		gameType="{{ gameType }}"
+		gamePrice="{{ gamePrice }}"
+	></app-card-price>
+</a>
