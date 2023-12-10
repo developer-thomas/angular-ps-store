@@ -1,0 +1,10 @@
+.list-container {
+	height: 45px;
+	padding: 0 1.15rem;
+	background-color: white;
+}
+
+.list-container > img {
+	height: 100%;
+	width: 34px;
+}
