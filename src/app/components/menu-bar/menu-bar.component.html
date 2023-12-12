@@ -1,8 +1,16 @@
 <div class="dropdowns-container">
 	<div class="list-container">
-		<button class="list-item" (click)="expand()">Jogos</button>
+		<span
+			[ngClass]="{
+				'list-item': !isDropdownOpen,
+				'list-item-2': isDropdownOpen
+			}"
+			(click)="toggleDropDown($event)"
+			>Jogos</span
+		>
 	</div>
-	<div class="jogos-expand" *ngIf="isExpanded">
+	<div *ngIf="isDropdownOpen" class="jogos-expand" [@dropdownAnimation]>
+		<!-- Conteúdo do Dropdown -->
 		<div class="jogos-expand-container">
 			<div class="jogos-expand-plataforms">
 				<div>PS5</div>
@@ -21,4 +29,5 @@
 		</div>
 	</div>
 </div>
+
 <app-second-menu></app-second-menu>

@@ -8,10 +8,10 @@ import { CardComponent } from './components/card/card.component';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { CardLabelComponent } from './components/card/card-label/card-label.component';
 import { CardPriceComponent } from './components/card/card-price/card-price.component';
-import { FirstMenuComponent } from './components/menu-bar/first-menu/first-menu.component';
+import { FirstMenuComponent } from './components/menu-bar/sony-menu/first-menu.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SecondMenuComponent } from './components/menu-bar/second-menu/second-menu.component';
+import { SecondMenuComponent } from './components/menu-bar/third-header/second-menu.component';
 
 @NgModule({
 	declarations: [
@@ -22,7 +22,7 @@ import { SecondMenuComponent } from './components/menu-bar/second-menu/second-me
 		CardLabelComponent,
 		CardPriceComponent,
 		FirstMenuComponent,
-  SecondMenuComponent,
+		SecondMenuComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
 	providers: [],
