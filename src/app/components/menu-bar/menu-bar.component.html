@@ -1,19 +1,24 @@
-<div class="menu-bar-container">
-	<div class="menu-bar-logo">
-		<img
-			src="../../../assets/img/playstation-store-logo-1.png"
-			alt=""
-			width="140px"
-			height="32px"
-		/>
+<div class="dropdowns-container">
+	<div class="list-container">
+		<button class="list-item" (click)="expand()">Jogos</button>
 	</div>
-	<div class="menu-bar-item">
-		<ul>
-			<li><a href="">Novidades</a></li>
-			<li><a href="">Coleções</a></li>
-			<li><a href="">Ofertas</a></li>
-			<li><a href="">Assinaturas</a></li>
-			<li><a href="">Navegar</a></li>
-		</ul>
+	<div class="jogos-expand" *ngIf="isExpanded">
+		<div class="jogos-expand-container">
+			<div class="jogos-expand-plataforms">
+				<div>PS5</div>
+				<div>PS4</div>
+				<div>PS VR2</div>
+				<div>PC</div>
+				<div>PS Plus</div>
+			</div>
+			<hr />
+			<div class="jogos-expand-footer">
+				<span>Playstation Indies</span>
+				<span>Jogos para PS4 no PS5</span>
+				<span>Grátis para jogar</span>
+				<span>Ofertas e promoções</span>
+			</div>
+		</div>
 	</div>
 </div>
+<app-second-menu></app-second-menu>

@@ -9,8 +9,9 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { CardLabelComponent } from './components/card/card-label/card-label.component';
 import { CardPriceComponent } from './components/card/card-price/card-price.component';
 import { FirstMenuComponent } from './components/menu-bar/first-menu/first-menu.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SecondMenuComponent } from './components/menu-bar/second-menu/second-menu.component';
-import { ListComponent } from './components/menu-bar/second-menu/list/list.component';
 
 @NgModule({
 	declarations: [
@@ -21,10 +22,9 @@ import { ListComponent } from './components/menu-bar/second-menu/list/list.compo
 		CardLabelComponent,
 		CardPriceComponent,
 		FirstMenuComponent,
-		SecondMenuComponent,
-  ListComponent,
+  SecondMenuComponent,
 	],
-	imports: [BrowserModule, AppRoutingModule],
+	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
 	providers: [],
 	bootstrap: [AppComponent],
 })
