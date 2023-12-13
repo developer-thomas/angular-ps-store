@@ -1,0 +1,11 @@
+<div class="list-container">
+	<!-- Opção JOGOS -->
+	<span
+		(click)="toggleDropDown()"
+		[ngClass]="{
+			'list-item': !isDropdownOpen,
+			'list-item-2': isDropdownOpen
+		}"
+		>{{title}}</span
+	>
+</div>

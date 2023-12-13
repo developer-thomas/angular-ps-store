@@ -6,6 +6,11 @@ import { Component, Input } from '@angular/core';
 	styleUrls: ['./dropdown-options.component.css'],
 })
 export class DropdownOptionsComponent {
+	@Input()
+	plataformIcon: string = ''
+	@Input()
+	plataform:string=''
+	
 	ps5Icon: string = '../../../../../assets/img/ps5-icon.png';
 	ps4Icon: string = '../../../../../assets/img/ps4-icon.png';
 	psVr2Icon: string = '../../../../../assets/img/ps-vr2-icon.png';

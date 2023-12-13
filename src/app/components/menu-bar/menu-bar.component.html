@@ -1,20 +1,32 @@
 <div class="dropdowns-container">
 	<div class="list-container">
-		<!-- Classe para a alteração da flecha -->
-		<span
-			[ngClass]="{
-				'list-item': !isDropdownOpen,
-				'list-item-2': isDropdownOpen
-			}"
+		<!-- Opção JOGOS -->
+		<app-nav-options
+			title="{{ 'Jogos' }}"
 			(click)="toggleDropDown($event)"
-			>Jogos</span
-		>
+		></app-nav-options>
+
+		<!-- Opção PS5 -->
+
+		<app-nav-options
+			title="{{ 'PS5' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
 	</div>
 	<div>
-		<!-- Tinha um problema aqui, se eu colasse o ngIf AQUI e DENTRO DESTE COMPONENT, ele não renderizava o input
+		<!-- COMENTÁRIO SOBRE UM ANTIGO PROBLEMA
+			Tinha um problema aqui, se eu colasse o ngIf AQUI e DENTRO DESTE COMPONENT, ele não renderizava o input
 		E também não havia motivos para ter dois deles, só no component "paizao" já é o suficiente
 		-->
-		<app-dropdown *ngIf="isDropdownOpen" [@dropdownAnimation]> </app-dropdown>
+
+		<!-- dropdown de jogos -->
+		<app-dropdown *ngIf="jogosDropdown" [@dropdownAnimation]> </app-dropdown>
+
+		<!-- Dropdown do PS5 -->
+		<app-dropdown-ps5
+			*ngIf="ps5Dropdown"
+			[@dropdownAnimation]
+		></app-dropdown-ps5>
 	</div>
 </div>
 

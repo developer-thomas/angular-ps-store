@@ -1,0 +1,27 @@
+.jogos-expand {
+	position: relative;
+	z-index: 999;
+}
+
+.jogos-expand-container {
+	width: 100%;
+	position: absolute;
+	background-color: white;
+	z-index: 999;
+}
+
+.jogos-expand-plataforms {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dropdown-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 170px;
+	width: 80px;
+	padding: 0px 100px;
+}

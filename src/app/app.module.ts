@@ -16,6 +16,7 @@ import { DropdownComponent } from './components/menu-bar/dropdown/dropdown.compo
 import { DropdownOptionsComponent } from './components/menu-bar/dropdown/dropdown-options/dropdown-options.component';
 import { OptionComponent } from './components/menu-bar/dropdown/dropdown-options/option/option.component';
 import { DropdownPs5Component } from './components/menu-bar/dropdown-ps5/dropdown-ps5.component';
+import { NavOptionsComponent } from './components/menu-bar/nav-options/nav-options.component';
 
 @NgModule({
 	declarations: [
@@ -31,6 +32,7 @@ import { DropdownPs5Component } from './components/menu-bar/dropdown-ps5/dropdow
   DropdownOptionsComponent,
   OptionComponent,
   DropdownPs5Component,
+  NavOptionsComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
 	providers: [],
