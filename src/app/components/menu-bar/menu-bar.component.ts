@@ -5,7 +5,7 @@ import {
 	transition,
 	animate,
 } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'app-menu-bar',
@@ -19,15 +19,13 @@ import { Component } from '@angular/core';
 	],
 })
 export class MenuBarComponent {
-	isDropdownOpen: boolean = false;
+	@Input()
+	plataform1: string = '';
+
+	isDropdownOpen: boolean = true;
 
 	toggleDropDown(event: Event) {
 		event.stopPropagation();
 		this.isDropdownOpen = !this.isDropdownOpen;
-	}
-
-	changeArrow() {
-		if (this.isDropdownOpen) {
-		}
 	}
 }

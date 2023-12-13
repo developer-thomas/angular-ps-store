@@ -12,6 +12,10 @@ import { FirstMenuComponent } from './components/menu-bar/sony-menu/first-menu.c
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SecondMenuComponent } from './components/menu-bar/third-header/second-menu.component';
+import { DropdownComponent } from './components/menu-bar/dropdown/dropdown.component';
+import { DropdownOptionsComponent } from './components/menu-bar/dropdown/dropdown-options/dropdown-options.component';
+import { OptionComponent } from './components/menu-bar/dropdown/dropdown-options/option/option.component';
+import { DropdownPs5Component } from './components/menu-bar/dropdown-ps5/dropdown-ps5.component';
 
 @NgModule({
 	declarations: [
@@ -23,6 +27,10 @@ import { SecondMenuComponent } from './components/menu-bar/third-header/second-m
 		CardPriceComponent,
 		FirstMenuComponent,
 		SecondMenuComponent,
+  DropdownComponent,
+  DropdownOptionsComponent,
+  OptionComponent,
+  DropdownPs5Component,
 	],
 	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
 	providers: [],

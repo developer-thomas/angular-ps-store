@@ -1,5 +1,6 @@
 <div class="dropdowns-container">
 	<div class="list-container">
+		<!-- Classe para a alteração da flecha -->
 		<span
 			[ngClass]="{
 				'list-item': !isDropdownOpen,
@@ -9,24 +10,11 @@
 			>Jogos</span
 		>
 	</div>
-	<div *ngIf="isDropdownOpen" class="jogos-expand" [@dropdownAnimation]>
-		<!-- Conteúdo do Dropdown -->
-		<div class="jogos-expand-container">
-			<div class="jogos-expand-plataforms">
-				<div>PS5</div>
-				<div>PS4</div>
-				<div>PS VR2</div>
-				<div>PC</div>
-				<div>PS Plus</div>
-			</div>
-			<hr />
-			<div class="jogos-expand-footer">
-				<span>Playstation Indies</span>
-				<span>Jogos para PS4 no PS5</span>
-				<span>Grátis para jogar</span>
-				<span>Ofertas e promoções</span>
-			</div>
-		</div>
+	<div>
+		<!-- Tinha um problema aqui, se eu colasse o ngIf AQUI e DENTRO DESTE COMPONENT, ele não renderizava o input
+		E também não havia motivos para ter dois deles, só no component "paizao" já é o suficiente
+		-->
+		<app-dropdown *ngIf="isDropdownOpen" [@dropdownAnimation]> </app-dropdown>
 	</div>
 </div>
 

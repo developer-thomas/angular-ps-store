@@ -1,0 +1,25 @@
+.plataform {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.plataform:hover {
+	height: 130px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 6px 17px -4px rgba(46, 74, 117, 0.6);
+	-moz-box-shadow: 1px 6px 17px -4px rgba(46, 74, 117, 0.6);
+	box-shadow: 1px 6px 17px -4px rgba(46, 74, 117, 0.6);
+}
+
+.plataform-img {
+	height: 60px;
+	width: 55px;
+}
+.plataform-span {
+	text-align: center;
+	padding: 10px;
+	width: 76px;
+	font-weight: 500;
+}

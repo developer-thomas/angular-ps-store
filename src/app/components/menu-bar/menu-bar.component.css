@@ -45,13 +45,4 @@
 	transform: rotate(-180deg);
 }
 
-.jogos-expand {
-	position: relative;
-	z-index: 999;
-}
 
-.jogos-expand-container {
-	width: 100%;
-	position: absolute;
-	background-color: white;
-}
