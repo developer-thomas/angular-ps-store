@@ -1,10 +1,10 @@
 .list-container {
 	display: flex;
-	height: 50px;
+	height: 40px;
 	flex-flow: row wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	padding: 0px 30px;
+	padding: 0px 20px;
 	background-color: white;
 	z-index: 10;
 }
@@ -18,29 +18,7 @@
 	color: #999999;
 }
 
-/* .list-item::after {
-	display: inline;
-	content: url("../../../assets/img/arrow.svg");
-	height: 20px;
-	padding: 2px;
+.playstation-logo {
 	width: 25px;
+	height: 25px;
 }
-
-.list-item-2 {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 70px;
-	cursor: pointer;
-	color: #999999;
-}
-
-.list-item-2::after {
-	display: inline;
-	content: url("../../../assets/img/arrow.svg");
-	height: 20px;
-	padding: 2px;
-	width: 25px;
-	-webkit-transform: rotate(-180deg);
-	transform: rotate(-180deg);
-} */

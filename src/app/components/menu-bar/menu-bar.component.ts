@@ -21,6 +21,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 export class MenuBarComponent implements OnInit, OnDestroy {
 	jogosDropdown: boolean = false;
 	ps5Dropdown: boolean = false;
+	playstationLogo: string = '../../../assets/img/playstation-logo.svg';
 
 	toggleDropDown(event: Event) {
 		event.stopPropagation();

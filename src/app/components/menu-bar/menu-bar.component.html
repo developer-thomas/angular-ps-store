@@ -1,5 +1,13 @@
 <div class="dropdowns-container">
 	<div class="list-container">
+		<!-- LOGO PLAYSTATION -->
+
+		<img
+			class="playstation-logo"
+			src="{{playstationLogo}}"
+			alt="playstation-logo"
+		/>
+
 		<!-- Opção JOGOS -->
 		<app-nav-options
 			title="{{ 'Jogos' }}"
@@ -10,6 +18,42 @@
 
 		<app-nav-options
 			title="{{ 'PS5' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
+
+		<!-- Opção PS4 -->
+		<app-nav-options
+			title="{{ 'PS4' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
+
+		<!-- OPÇÃO SERVIÇOS -->
+		<app-nav-options
+			title="{{ 'Serviços' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
+
+		<!-- OPÇÃO ACESSÓRIOS -->
+		<app-nav-options
+			title="{{ 'Acessórios' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
+
+		<!-- OPÇÃO NOTICIAS -->
+		<app-nav-options
+			title="{{ 'Notícias' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
+
+		<!-- OPÇÃO LOJA -->
+		<app-nav-options
+			title="{{ 'Loja' }}"
+			(click)="toggleDropdownPs5($event)"
+		></app-nav-options>
+
+		<!-- OPÇÃO SUPORTE -->
+		<app-nav-options
+			title="{{ 'Suporte' }}"
 			(click)="toggleDropdownPs5($event)"
 		></app-nav-options>
 	</div>

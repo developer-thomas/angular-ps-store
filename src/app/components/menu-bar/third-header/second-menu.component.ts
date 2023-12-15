@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
 	templateUrl: './second-menu.component.html',
 	styleUrls: ['./second-menu.component.css'],
 })
-export class SecondMenuComponent {}
+export class SecondMenuComponent {
+	playLogo: string = '../../../assets/img/playstation-store-logo-1.png';
+}

@@ -4,16 +4,11 @@
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
+	font-family: helvetica, arial, sans-serif;
 }
 
 body {
-	background: rgb(2, 0, 36);
-	background: linear-gradient(
-		90deg,
-		rgba(2, 0, 36, 1) 0%,
-		rgba(9, 9, 121, 1) 35%,
-		rgba(9, 9, 121, 1) 100%
-	);
+	background-color: #e7e5e5;
 }
 
 html,
@@ -22,5 +17,4 @@ body {
 }
 body {
 	margin: 0;
-	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
